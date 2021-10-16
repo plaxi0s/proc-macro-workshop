@@ -279,7 +279,6 @@ pub fn derive(input: TokenStream) -> TokenStream {
         .collect();
 
     let expanded = quote! {
-
         #(#missing_field_err_impls)*
 
         pub struct #builder_name {
@@ -289,13 +288,14 @@ pub fn derive(input: TokenStream) -> TokenStream {
         impl #name{
             pub fn builder() -> #builder_name{
                 #builder_name{
+
                     #(#builder_defaults),*
+
                 }
             }
         }
 
         impl #builder_name{
-
             #(#setters)*
 
             #(#vector_setters)*

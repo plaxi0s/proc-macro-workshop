@@ -1,4 +1,4 @@
-# Rust Latam: procedural macros workshop
+# Solutions for Rust Latam: procedural macros workshop
 
 *This repo contains a selection of projects designed to learn to write Rust
 procedural macros &mdash; Rust code that generates Rust code.*
